@@ -85,14 +85,14 @@ gsap.to(".pin-content", {
 
 // Hero float-in animation
 gsap.fromTo(
-  ".headline h1",
+  ".hero-content h1",
   { opacity: 0, y: 40 },
   {
     opacity: 1,
     y: 0,
-    duration: 1.5,
+    duration: 1.4,
     ease: "power2.out",
-    delay: 0.5,
+    delay: 0.3,
   }
 );
 
