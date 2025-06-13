@@ -379,3 +379,78 @@ section p,
   width: 100%;
   overflow-x: hidden;
 }
+
+#about {
+  background: linear-gradient(135deg, #101010, #1e1e1e);
+}
+
+#practitioners {
+  background: url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+  position: relative;
+}
+
+#practitioners::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+#practitioners .split-image,
+#practitioners .split-text {
+  position: relative;
+  z-index: 1;
+}
+
+#services {
+  background: radial-gradient(circle at center, #0a0a0a, #000);
+}
+
+#qhht {
+  background: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+  position: relative;
+}
+
+#qhht::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+#qhht .split-image,
+#qhht .split-text {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-section {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+#book {
+  background: #000;
+  border-top: 1px solid #222;
+}
+#book h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#book a {
+  display: inline-block;
+  background: cyan;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+#book a:hover {
+  background: #00bcd4;
+}
