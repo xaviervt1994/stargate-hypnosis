@@ -7,6 +7,12 @@ body {
   overflow-x: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Preloader */
 #preloader {
   position: fixed;
@@ -256,10 +262,12 @@ section p,
 
 .split-image img {
   width: 100%;
-  max-width: 450px;
+  max-width: 100%; /* force full scaling in narrow viewports */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  display: block;
+  margin: 0 auto;
 }
 
 .split-text {
@@ -365,4 +373,9 @@ section p,
   z-index: 11;
   position: relative;
   pointer-events: all;
+}
+
+#smooth-content {
+  width: 100%;
+  overflow-x: hidden;
 }
