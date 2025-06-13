@@ -191,12 +191,23 @@ section p,
 
 /* Pin Section */
 .pin-section {
-  height: 200vh;
+  height: 140vh; /* not 200vh */
   position: relative;
-  background: url("https://images.unsplash.com/photo-1531572753234-4f0a37cfc5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+  background: url("https://images.unsplash.com/photo-1521804906057-3fba5f4c9b69?auto=format&fit=crop&w=1600&q=80")
     no-repeat center center/cover;
   overscroll-behavior: none;
   scroll-behavior: smooth;
+  background-size: cover;
+  background-attachment: fixed;
+  overscroll-behavior: contain;
+}
+
+.pin-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 .pin-content {
@@ -310,13 +321,15 @@ section p,
 .bg-reveal-section {
   position: relative;
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1485562071780-0e84b2a9b1c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+  background: url("https://images.unsplash.com/photo-1616114615403-0b3c70d2f2ae?auto=format&fit=crop&w=1600&q=80")
     no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .bg-reveal-section::before {
@@ -384,7 +397,7 @@ section p,
 }
 
 #about {
-  background: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+  background: url("https://images.unsplash.com/photo-1604537466575-45e82f7c2d89?auto=format&fit=crop&w=1600&q=80")
     no-repeat center center/cover;
 }
 
@@ -410,7 +423,7 @@ section p,
 }
 
 #services {
-  background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+  background: url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1600&q=80")
     no-repeat center center/cover;
 }
 

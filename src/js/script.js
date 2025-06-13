@@ -72,16 +72,16 @@ gsap.utils.toArray(".fade-in").forEach((elem) => {
 
 // Pinned storytelling section
 gsap.to(".pin-content", {
+  opacity: 1,
+  duration: 1,
   scrollTrigger: {
     trigger: ".pin-section",
     start: "top top",
-    end: "bottom top",
+    end: "+=100%", // ✅ replaced 'bottom top' with smoother scroll length
     pin: true,
     scrub: 1,
-    anticipatePin: 1, // helps reduce jumpiness
+    anticipatePin: 1, // ✅ helps smooth out scroll pinning
   },
-  opacity: 1,
-  duration: 1,
 });
 
 // Hero float-in animation
