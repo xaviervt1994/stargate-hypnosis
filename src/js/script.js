@@ -1,5 +1,8 @@
 console.log("Script loaded!");
 
+// In script.js or main.js
+import "../css/style.css";
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 // Smooth scrolling setup
