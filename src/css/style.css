@@ -262,10 +262,19 @@ section p,
   .split {
     flex-direction: column;
     text-align: center;
+    align-items: center; /* <-- add this line */
+    padding: 4rem 1rem; /* optional: tighter padding */
   }
 
   .split-text {
     text-align: center;
+  }
+
+  .split-image img {
+    width: 100%;
+    height: auto;
+    max-width: 90vw; /* add this if not present */
+    margin: 0 auto; /* center it horizontally */
   }
 }
 
