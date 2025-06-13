@@ -59,9 +59,17 @@ nav {
 
 nav a {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.05rem; /* ✅ more readable */
   text-decoration: none;
+  padding: 0.5rem 0.75rem; /* ✅ larger tap target */
   transition: color 0.3s;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+  }
 }
 
 nav a:hover {
@@ -261,20 +269,30 @@ section p,
 @media (max-width: 768px) {
   .split {
     flex-direction: column;
+    align-items: center; /* ✅ ensures children center horizontally */
+    justify-content: center;
     text-align: center;
-    align-items: center; /* <-- add this line */
-    padding: 4rem 1rem; /* optional: tighter padding */
+    padding: 4rem 1rem;
   }
 
-  .split-text {
-    text-align: center;
+  .split-image {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* ✅ ensures full width */
   }
 
   .split-image img {
-    width: 100%;
+    width: 90%; /* ✅ avoids full edge contact */
+    max-width: 450px;
     height: auto;
-    max-width: 90vw; /* add this if not present */
-    margin: 0 auto; /* center it horizontally */
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .split-text {
+    width: 100%;
+    max-width: 600px;
   }
 }
 
