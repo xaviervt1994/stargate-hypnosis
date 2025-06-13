@@ -195,10 +195,12 @@ section p,
   position: relative;
   background: url("https://images.unsplash.com/photo-1531572753234-4f0a37cfc5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
     no-repeat center center/cover;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 
 .pin-content {
-  position: sticky;
+  position: relative;
   top: 0;
   height: 100vh;
   display: flex;
@@ -206,7 +208,7 @@ section p,
   justify-content: center;
   align-items: center;
   padding: 3rem;
-  z-index: 2;
+  z-index: 1;
 }
 
 .pin-content h2 {
@@ -382,7 +384,7 @@ section p,
 }
 
 #about {
-  background: url("https://images.unsplash.com/photo-1581090700227-1e8d5c94d8e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+  background: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
     no-repeat center center/cover;
 }
 

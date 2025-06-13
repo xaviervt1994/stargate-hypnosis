@@ -78,6 +78,7 @@ gsap.to(".pin-content", {
     end: "bottom top",
     pin: true,
     scrub: 1,
+    anticipatePin: 1, // helps reduce jumpiness
   },
   opacity: 1,
   duration: 1,
