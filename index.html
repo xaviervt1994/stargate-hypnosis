@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stargate Hypnosis</title>
+    <script type="module" crossorigin src="/stargate-hypnosis/assets/index-DNPAiNSc.js"></script>
+    <link rel="stylesheet" crossorigin href="/stargate-hypnosis/assets/index-BegMOEuF.css">
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader-text">Stargate Hypnosis</div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Smooth Scroll Wrapper -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- Hero -->
+        <section class="hero">
+          <div class="headline">
+            <h1>
+              Awaken Your Mind<br />
+              Unlock Your True Potential
+            </h1>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="fade-in split" id="about">
+          <div class="split-image">
+            <img
+              src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="abstract consciousness"
+            />
+          </div>
+          <div class="split-text">
+            <h2>What is Stargate Hypnosis?</h2>
+            <p>
+              Stargate Hypnosis uses proven methods to create change at the
+              subconscious level to help you unlock your full potential. Whether
+              it’s anxiety, trauma, or performance, we help you reclaim control.
+            </p>
+          </div>
+        </section>
+
+        <!-- Practitioners -->
+        <section class="fade-in split" id="practitioners">
+          <div class="split-image">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083383_960_720.jpg"
+              alt="peaceful woman"
+            />
+          </div>
+          <div class="split-text">
+            <h2>Meet the Practitioners</h2>
+            <p>
+              Led by certified practitioners with years of experience, we bring
+              a grounded yet expansive approach to mental healing and
+              transformation.
+            </p>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="fade-in split" id="services">
+          <div class="split-image">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="forest path"
+            />
+          </div>
+          <div class="split-text">
+            <h2>What We Help With</h2>
+            <p>
+              From quitting smoking to healing deep trauma, our services address
+              mind, body, and spirit through powerful subconscious reprogramming
+              and relaxation techniques.
+            </p>
+          </div>
+        </section>
+
+        <!-- QHHT -->
+        <section class="fade-in split" id="qhht">
+          <div class="split-image">
+            <img
+              src="https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="galaxy dreamscape"
+            />
+          </div>
+          <div class="split-text">
+            <h2>Quantum Healing Hypnosis Technique® (QHHT®)</h2>
+            <p>
+              QHHT® is a powerful technique developed by Dolores Cannon that
+              allows individuals to access past lives and gain healing insights
+              directly from their Higher Self. At Stargate Hypnosis, we offer
+              QHHT® to help you explore your soul’s purpose, heal past wounds,
+              and gain clarity on your life’s direction.
+            </p>
+          </div>
+        </section>
+
+        <section class="bg-reveal-section">
+          <div class="bg-reveal-content">
+            <h2>"The answers you seek lie within."</h2>
+            <p>
+              Every journey begins by turning inward. At Stargate Hypnosis, we
+              guide you to meet yourself beyond fear, doubt, or limitation.
+            </p>
+          </div>
+        </section>
+
+        <!-- Pinned Journey Section -->
+        <section class="pin-section">
+          <div class="pin-content">
+            <h2>Your Journey in a Session</h2>
+            <p>
+              As you close your eyes, guided by the voice of a trained
+              practitioner, your mind drifts. The world quiets. Thoughts soften.
+              You’re safe. In this space, you connect with deeper layers of
+              yourself. Memories surface. Patterns rewire. You’re healing.
+              You’re awakening. This is transformation through Stargate
+              Hypnosis.
+            </p>
+          </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="testimonial-section">
+          <h2>Client Stories</h2>
+          <div class="testimonial-carousel">
+            <div class="testimonial active">
+              <p>"I came in skeptical and left in tears..."</p>
+              <span>- Sarah T.</span>
+            </div>
+            <div class="testimonial">
+              <p>"Stargate Hypnosis helped me overcome..."</p>
+              <span>- Daniel K.</span>
+            </div>
+            <div class="testimonial">
+              <p>"This work changed my life. Period..."</p>
+              <span>- Priya M.</span>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button id="prevTestimonial">‹</button>
+            <button id="nextTestimonial">›</button>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="fade-in" id="book">
+          <h2>Ready to Begin?</h2>
+          <a
+            href="https://www.stargatehypnosis.com/book-a-session"
+            target="_blank"
+            >Book a Session</a
+          >
+        </section>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#practitioners">Team</a>
+      <a href="#services">Help</a>
+      <a href="#qhht">QHHT®</a>
+      <a href="#book">Book</a>
+    </nav>
+
+    <!-- Your main animation logic -->
+
+    <!-- Preloader Logic -->
+    <script>
+      window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        preloader.style.opacity = 0;
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 500);
+      });
+    </script>
+
+  </body>
+</html>
