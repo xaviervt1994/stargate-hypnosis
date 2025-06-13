@@ -1,17 +1,14 @@
+// Load confirmation
 console.log("Script loaded!");
 
-// In script.js or main.js
+// Import CSS and GSAP
 import "../css/style.css";
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-// Smooth scrolling setup
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-// Initialize smoother
+// ScrollSmoother initialization
 const smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
@@ -19,7 +16,7 @@ const smoother = ScrollSmoother.create({
   effects: true,
 });
 
-// Wait for DOM to fully load
+// DOM ready logic
 window.addEventListener("DOMContentLoaded", () => {
   const testimonials = document.querySelectorAll(".testimonial");
   const prevBtn = document.getElementById("prevTestimonial");
@@ -48,10 +45,10 @@ window.addEventListener("DOMContentLoaded", () => {
     show(current);
   });
 
-  show(current); // Show initial
+  show(current);
 });
 
-// Fade-in sections
+// Fade-in on scroll
 gsap.utils.toArray(".fade-in").forEach((elem) => {
   gsap.fromTo(
     elem,
@@ -70,21 +67,21 @@ gsap.utils.toArray(".fade-in").forEach((elem) => {
   );
 });
 
-// Pinned storytelling section
+// Pin section scroll
 gsap.to(".pin-content", {
   opacity: 1,
   duration: 1,
   scrollTrigger: {
     trigger: ".pin-section",
     start: "top top",
-    end: "+=100%", // ✅ replaced 'bottom top' with smoother scroll length
+    end: "+=100%",
     pin: true,
     scrub: 1,
-    anticipatePin: 1, // ✅ helps smooth out scroll pinning
+    anticipatePin: 1,
   },
 });
 
-// Hero float-in animation
+// Hero entrance
 gsap.fromTo(
   ".hero-content h1",
   { opacity: 0, y: 40 },
@@ -97,7 +94,7 @@ gsap.fromTo(
   }
 );
 
-// Animate split sections
+// Split sections
 gsap.utils.toArray(".split").forEach((section) => {
   const image = section.querySelector(".split-image");
   const text = section.querySelector(".split-text");
@@ -135,7 +132,7 @@ gsap.utils.toArray(".split").forEach((section) => {
   );
 });
 
-// Background reveal section
+// Background reveal animation
 gsap.fromTo(
   ".bg-reveal-content",
   { opacity: 0, y: 50 },
