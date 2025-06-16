@@ -189,6 +189,27 @@ section p,
   transform: translateY(50px);
 }
 
+#about {
+  background: url("https://images.unsplash.com/photo-1584606345175-9fd5b0f1834f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+  background-size: cover;
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+#about .split-image,
+#about .split-text {
+  position: relative;
+  z-index: 1;
+}
+
 /* Pin Section */
 .pin-section {
   height: 140vh;
