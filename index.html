@@ -110,6 +110,14 @@
         z-index: 1000;
         transition: width 0.1s ease;
       }
+
+      @media (max-width: 768px) {
+        /* Adjust max-width as needed for your definition of "mobile" */
+        .parallax-bg {
+          background-attachment: scroll !important; /* Use !important to override inline style if necessary */
+          background-position: center center; /* Ensure it's centered */
+        }
+      }
     </style>
   </head>
   <body class="bg-gray-900 text-white overflow-x-hidden">
