@@ -65,10 +65,29 @@
       }
 
       .parallax-bg {
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+      }
+
+      /* Only apply parallax effect on larger screens */
+      @media (min-width: 768px) {
+        .parallax-bg {
+          background-attachment: fixed;
+        }
+      }
+
+      /* Mobile-specific styling for the QHHT section */
+      @media (max-width: 767px) {
+        .parallax-bg {
+          background-attachment: scroll;
+          min-height: 100vh;
+        }
+
+        .qhht-bg-overlay {
+          background: rgba(0, 0, 0, 0.7);
+        }
       }
 
       .testimonial-card {
@@ -527,7 +546,7 @@
         background-image: url('https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
       "
     >
-      <div class="bg-black bg-opacity-60 py-20">
+      <div class="qhht-bg-overlay bg-black bg-opacity-60 py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="fade-in-up">
