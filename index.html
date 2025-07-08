@@ -111,11 +111,9 @@
         transition: width 0.1s ease;
       }
 
-      @media (max-width: 768px) {
-        /* Adjust max-width as needed for your definition of "mobile" */
+      @media (min-width: 768px) {
         .parallax-bg {
-          background-attachment: scroll !important; /* Use !important to override inline style if necessary */
-          background-position: center center; /* Ensure it's centered */
+          background-attachment: fixed;
         }
       }
     </style>
